@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 @Configuration
 public class MongoConfig {
 
-    @Value("${SPRING_DATA_MONGODB_URI:mongodb://localhost:27017/smart}")
+    @Value("${SPRING_DATA_MONGODB_URI}")
     private String mongoUri;
 
     @Bean
